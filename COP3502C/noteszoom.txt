@@ -1,0 +1,5 @@
+//fgets() is the safe function to read a string *will be in exam*!!!!!!!!!
+
+%07d //the 7 is the field width
+
+//struct has fields or members 

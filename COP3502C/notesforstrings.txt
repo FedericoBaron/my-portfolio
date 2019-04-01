@@ -1,0 +1,7 @@
+//null sentinel????? null terminator is at the end of char array aka string. '\0'
+
+// string literal is name = "sean " 
+// string literals are read only
+//use strcpy instead 
+//string.h is only used when u have string functions b
+// use strcmp instead of using if(str1 == str2) because you're comparing memory addresses with == in c for strings. if strcmp == 0 checks if they're equal. returns 0 if theyre equal
