@@ -7,13 +7,31 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+    <ul>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#getintouch">Get in Touch</a></li>
+    </ul>
+    <div id="container">
+        <div id="aboutme">
+            <h1 id="title">About Me</h1>
+            <img id="profilepic" src="./images/profilepic.jpeg">
+            <p>Hey there! I'm Federico Baron. I'm a computer science major 
+                at University of Central Florida</p>
+            <a href="./files/resume.pdf" download="Federico_Baron_Resume">
+                <button>Download Resume</button>
+            </a>
+        </div>
+        <div id="experience">
+            <h1>Experience</h1>
+        </div>
+        <div id="projects">
+            <h1>Projects</h1>
+        </div>
+        <div id="getintouch">
+            <h1>Get in Touch</h1>
+        </div>
     </div>
   </body>
 </html>
