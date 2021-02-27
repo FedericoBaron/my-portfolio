@@ -57,3 +57,11 @@ ul li
 {
     height: 10rem;
 }
+#navlink{
+    text-decoration: none;
+    color: #E4E6EB
+}
+
+#navlink current{
+    
+}
