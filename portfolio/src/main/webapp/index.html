@@ -5,15 +5,55 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/7b3aa24b57.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+    <ul>
+        <li>
+            <a id="navlink" href="#aboutme">About Me</a>
+        </li>
+        <li><a id="navlink" href="#experience">
+            Experience</a>
+        </li>
+        <li>
+            <a id="navlink" href="#projects">Projects</a>
+        </li>
+        <li>
+            <a id="navlink" href="#getintouch">Get in Touch</a>
+        </li>
+    </ul>
+    <div id="container">
+        <div id="aboutme">
+            <h1 id="title">About Me</h1>
+            <p>
+                <img id="profilepic" src="./images/profilepic.jpeg">
+                Hey there!
+                Federico Baron
+                Software Engineer
+            </p>
+            
+            <!-- <p id="name">Federico Baron.</p>   -->
+            <!-- <p>Software Engineer</p> -->
+            <a id="icon" href="./files/resume.pdf" target="_blank">
+                <i class="fas fa-file-invoice"></i>
+            </a>
+            <a id="icon" href="https://github.com/FedericoBaron" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a id="icon" href="https://www.linkedin.com/in/federicobaron/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            
+        </div>
+        <div id="experience">
+            <h1>Experience</h1>
+        </div>
+        <div id="projects">
+            <h1>Projects</h1>
+        </div>
+        <div id="getintouch">
+            <h1>Get in Touch</h1>
+        </div>
     </div>
   </body>
 </html>
