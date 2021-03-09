@@ -12,7 +12,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-window.addEventListener('scroll', () => {
-    let current = '';
+// window.addEventListener('scroll', () => {
+//     let current = '';
     
-})
+// })
+
+/** Fetches hello **/
+async function showSkills() {
+  console.log("hiiiii");
+  const responseFromServer = await fetch('/skills');
+  const textFromResponse = await responseFromServer.text();
+
+  const dateContainer = document.getElementById('skills-container');
+  dateContainer.innerText = textFromResponse;
+}
