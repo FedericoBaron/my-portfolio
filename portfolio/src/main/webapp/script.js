@@ -19,10 +19,10 @@
 
 /** Fetches hello **/
 async function showSkills() {
-  console.log("hiiiii");
+  
   const responseFromServer = await fetch('/skills');
-  const textFromResponse = await responseFromServer.text();
+  const jsonFromResponse = await responseFromServer.json();
 
   const dateContainer = document.getElementById('skills-container');
-  dateContainer.innerText = textFromResponse;
+  dateContainer.innerText = jsonFromResponse[Math.floor(Math.random() * Math.floor(3))];
 }
