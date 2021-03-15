@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/7b3aa24b57.js" crossorigin="anonymous"></script>
   </head>
@@ -12,8 +13,8 @@
         <li>
             <a id="navlink" href="#aboutme">About Me</a>
         </li>
-        <li><a id="navlink" href="#experience">
-            Experience</a>
+        <li>
+            <a id="navlink" href="#experience">Experience</a>
         </li>
         <li>
             <a id="navlink" href="#projects">Projects</a>
@@ -22,6 +23,7 @@
             <a id="navlink" href="#getintouch">Get in Touch</a>
         </li>
     </ul>
+    <!-- <div id="timeline" height:"200px" padding: "50px"></div> -->
     <div id="container">
         <div id="aboutme">
             <h1 id="title">About Me</h1>
@@ -49,7 +51,10 @@
 
         </div>
         <div id="experience">
-            <h1>Experience</h1>
+            <h1 id="title">Experience</h1>
+            <span id="timelineC">
+                <span id="timeline" style="position: left;"></span>
+            </span>
         </div>
         <div id="projects">
             <h1>Projects</h1>
@@ -59,4 +64,5 @@
         </div>
     </div>
   </body>
+  
 </html>

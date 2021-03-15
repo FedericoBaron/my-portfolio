@@ -47,6 +47,21 @@ ul li
 {
 
 }
+#container span#timelineC
+{
+    all: initial;
+    height: 100px;
+    float:left;
+    position: start;
+    margin:0;
+    /* 
+    position: start;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    text-align: center; */
+    
+}
 #container div#projects
 {
 }
