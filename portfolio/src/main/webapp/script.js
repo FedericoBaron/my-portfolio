@@ -26,3 +26,35 @@ async function showSkills() {
   const dateContainer = document.getElementById('skills-container');
   dateContainer.innerText = jsonFromResponse[Math.floor(Math.random() * Math.floor(3))];
 }
+
+
+google.charts.load("current", {packages:["timeline"]});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+var container = document.getElementById('timeline');
+var chart = new google.visualization.Timeline(container);
+var dataTable = new google.visualization.DataTable();
+
+dataTable.addColumn({ type: 'string', id: 'ExperienceType' });
+dataTable.addColumn({ type: 'string', id: 'Name' });
+dataTable.addColumn({ type: 'date', id: 'Start' });
+dataTable.addColumn({ type: 'date', id: 'End' });
+
+dataTable.addRows([
+    [ 'Intern', 'Facebook', new Date(1789, 3, 30), new Date(1797, 2, 4) ],
+    [ 'Intern', 'Google', new Date(1797, 2, 4),  new Date(1801, 2, 4) ],
+    [ 'Intern', 'Apple',  new Date(1801, 2, 4),  new Date(1809, 2, 4) ]]);
+
+var options = {
+    // timeline: { colorByRowLabel: true, color: '#E4E6EB' },
+    timeline: { 
+                colorByRowLabel: true,
+                rowLabelStyle: {color: '#E4E6EB' },
+                barLabelStyle: {color: '#E4E6EB' } 
+            },
+    backgroundColor:'#121212',
+    width: 700,
+};
+
+chart.draw(dataTable, options);
+}

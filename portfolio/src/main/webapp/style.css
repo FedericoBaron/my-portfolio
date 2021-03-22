@@ -9,7 +9,7 @@ body
     color: #E4E6EB
     /* color: #240090; */
 }
-ul{
+#sections{
     position: fixed;
     top: 50%;
     right: 0;
@@ -18,7 +18,7 @@ ul{
     padding: 2%;
     z-index: 1;
 }
-ul li
+#sectionsList
 {
     list-style:none;
 }
@@ -30,7 +30,7 @@ ul li
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
-#container div
+#aboutme
 {
     margin: auto;
     position: center;
@@ -39,19 +39,47 @@ ul li
     text-align: left;
     scroll-snap-align: start;
 }
-#container div#aboutme
+#experience
 {
-
+    margin: auto;
+    position: center;
+    width: 60%;
+    height: 100vh;
+    text-align: left;
+    scroll-snap-align: start;
 }
-#container div#experience
+#timelineC
 {
-
+    all: initial;
+    height: 100px;
+    float:left;
+    position: start;
+    margin:0;
+    /* 
+    position: start;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    text-align: center; */
+    
 }
-#container div#projects
+#projects
 {
+    margin: auto;
+    position: center;
+    width: 60%;
+    height: 100vh;
+    text-align: left;
+    scroll-snap-align: start;
 }
-#container div#getintouch
+#getintouch
 {
+    margin: auto;
+    position: center;
+    width: 60%;
+    height: 100vh;
+    text-align: left;
+    scroll-snap-align: start;
 }
 #title{
     color: #ff6633;
@@ -64,7 +92,7 @@ ul li
     height: 15rem;
     border-radius: 50%;
 }
-#navlink{
+.navlink{
     text-decoration: none;
     color: #E4E6EB
 }
